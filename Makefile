@@ -1,6 +1,6 @@
 ##need install jemalloc libary
 all: threadpool.o httpd.o
-	gcc -Wall -g -O2 ./bstrlib/bstrlib.c -ljemalloc -lpthread  threadpool.o httpd.o  -o http_server
+	gcc -Wall -g -O2 ./bstrlib/bstrlib.c  threadpool.o httpd.o  -o http_server -ljemalloc -lpthread 
 httpd.o:
 	gcc -Wall -g -O2  -c httpd.c -o httpd.o
 threadpool.o:
