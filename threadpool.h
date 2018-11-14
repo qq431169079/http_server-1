@@ -1,5 +1,8 @@
 ﻿#ifndef THREADPOOL_H
 #define THREADPOOL_H
+#ifdef __cplusplus
+extern "C"{
+#endif
 
 #include <stdio.h>  
 #include <stdlib.h>  
@@ -71,4 +74,7 @@ int threadpool_destroy(struct threadpool *pool);
 //================================================================================================
 void* threadpool_function(void* arg);
 
+#ifdef __cplusplus
+}
+#endif
 #endif
