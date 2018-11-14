@@ -1,10 +1,9 @@
 /*MIT*/
 a simple http server with epoll used pure c
+epoll+et+oneshot+thread pool
 
 ###################
 cd http_server
 make
-./http_server
-http://192.168.162.139:8864/test.html
-
-keepalive
+./httpd
+http://ip:port/test.html
